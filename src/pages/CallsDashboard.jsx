@@ -28,12 +28,10 @@ export default function CallsDashboard() {
   const negR    = pn.total>0?Math.round(pn.n/pn.total*100):0;
   const avgSc   = useMemo(()=>avgField(recs,"score"),[recs]);
   const qBreak  = useMemo(()=>questionBreakdown(recs,config.CALL_QUESTIONS),[recs]);
-  const agRank  = useMemo(()=>rankByRate(recs,"agentName",CQ_KEYS),[recs]);
   const evRank  = useMemo(()=>rankByRate(recs,"evaluatorName",CQ_KEYS),[recs]);
   const brRank  = useMemo(()=>rankByRate(recs,"branch",CQ_KEYS),[recs]);
   const trend   = useMemo(()=>dailyTrend(recs,"callDate",CQ_KEYS),[recs]);
   const typeDist= useMemo(()=>groupByField(recs,"callType"),[recs]);
-  const resDist = useMemo(()=>groupByField(recs,"callResult"),[recs]);
   const followUp= useMemo(()=>recs.filter(r=>r.followUp==="Yes").length,[recs]);
 
   // Per-agent average score
