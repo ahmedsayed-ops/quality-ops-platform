@@ -79,13 +79,31 @@ export async function fetchCalls() {
 }
 
 const C_MAP = {
-  "Timestamp":"timestamp","Agent Name":"agentName","Evaluator Name":"evaluatorName",
-  "Call Date":"callDate","Call Time":"callTime","Customer Name":"customerName",
-  "Customer Mobile":"customerMobile","Branch":"branch","Department":"department",
-  "Call Type":"callType","Call Result":"callResult","Call Duration":"callDuration",
-  "cq1":"cq1","cq2":"cq2","cq3":"cq3","cq4":"cq4","cq5":"cq5",
-  "cq6":"cq6","cq7":"cq7","cq8":"cq8","cq9":"cq9","cq10":"cq10",
-  "Score":"score","Comments":"comments","Follow Up":"followUp"
+  "Timestamp":"timestamp",
+  "Agent Name":"agentName",
+  "Evaluator Name":"evaluatorName",
+  "Call Date":"callDate",
+  "Call Time":"callTime",
+  "Customer Name":"customerName",
+  "Customer Mobile":"customerMobile",
+  "Branch":"branch",
+  "Department":"department",
+  "Call Type":"callType",
+  "Call Result":"callResult",
+  "Call Duration":"callDuration",
+  "cq1":"cq1",
+  "cq2":"cq2",
+  "cq3":"cq3",
+  "cq4":"cq4",
+  "cq5":"cq5",
+  "cq6":"cq6",
+  "cq7":"cq7",
+  "cq8":"cq8",
+  "cq9":"cq9",
+  "cq10":"cq10",
+  "Score":"score",
+  "Comments":"comments",
+  "Follow Up":"followUp"
 };
 function normaliseCall(r) {
   const o = normalise(r, C_MAP);
