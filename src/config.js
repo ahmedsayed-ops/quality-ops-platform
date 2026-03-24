@@ -7,8 +7,7 @@ const config = {
   // ── Backend endpoint ─────────────────────────────────────────
   // All 3 modules use the same Apps Script URL.
   // Override via REACT_APP_APPS_SCRIPT_URL env var on Vercel.
-  APPS_SCRIPT_URL:
-  "https://script.google.com/macros/s/AKfycbwNGL5ZVVvDQtwZPaIN2WbFqax09ryofG373mhbN89EcNwPVjre9mS0KEUZjMhFajWp/exec",
+  APPS_SCRIPT_URL: "https://script.google.com/macros/s/AKfycbwNGL5ZVVvDQtwZPaIN2WbFqax09ryofG373mhbN89EcNwPVjre9mS0KEUZjMhFajWp/exec"
   
   // ── Branding ─────────────────────────────────────────────────
   COMPANY_NAME: "Dsquares",
