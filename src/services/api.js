@@ -48,11 +48,8 @@ async function get(module, fallback) {
 //               visitDate, q1, q2, q3, q4, comments
 // ================================================================
 export const submitVisit = p => post({ module:"visits", ...p });
-
-export async function fetchVisits() {
-  const rows = await get("visits", demoVisits);
-  return rows.map(normaliseVisit).sort(byTsDesc);
-}
+export const submitCall = p => post({ module:"calls", ...p });
+export const submitComplaint = p => post({ module:"complaints", ...p });
 
 // Sheet col → camelCase key
 const V_MAP = {
